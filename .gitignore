@@ -1,0 +1,212 @@
+# =========================
+# Secrets & environment
+# =========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+service-account*.json
+.streamlit/secrets.toml
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+develop-eggs/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+*.egg
+MANIFEST
+pip-wheel-metadata/
+pip-log.txt
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.python-version
+conda-env/
+
+# Package managers (uncomment if you don't want to commit lock files)
+# poetry.lock
+# Pipfile.lock
+# uv.lock
+
+# =========================
+# Jupyter / notebooks
+# =========================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.virtual_documents/
+# Uncomment to avoid committing notebook outputs/experiments
+# *.ipynb
+
+# =========================
+# RAG: vector stores & indexes
+# =========================
+chroma/
+chroma_db/
+.chroma/
+vectorstore/
+vector_store/
+vectorstores/
+vectordb/
+faiss_index/
+*.faiss
+*.index
+*.pkl
+*.pickle
+qdrant_storage/
+qdrant_data/
+weaviate_data/
+milvus/
+lancedb/
+.lancedb/
+pgdata/
+index_storage/
+storage/
+.llama_index/
+llama_index_cache/
+.cache/
+
+# =========================
+# RAG: data & documents
+# =========================
+data/raw/
+data/processed/
+data/embeddings/
+data/*.csv
+data/*.parquet
+data/*.jsonl
+docs_raw/
+documents/
+uploads/
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+# Keep small sample files if needed:
+# !data/sample/
+# !data/sample/**
+
+# =========================
+# Models & weights
+# =========================
+models/
+checkpoints/
+weights/
+*.gguf
+*.ggml
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.h5
+.huggingface/
+.hf_cache/
+huggingface/
+transformers_cache/
+sentence_transformers/
+ollama/
+
+# =========================
+# Logs, traces & experiments
+# =========================
+logs/
+*.log
+wandb/
+mlruns/
+mlartifacts/
+.langchain/
+langsmith/
+.trulens/
+runs/
+outputs/
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Databases (local)
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+
+# =========================
+# Testing & coverage
+# =========================
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+.docker/
+
+# =========================
+# Node (if you have a frontend)
+# =========================
+node_modules/
+.next/
+.nuxt/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.parcel-cache/
+
+# =========================
+# IDEs & editors
+# =========================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
